@@ -13,7 +13,7 @@ if (!isset($_SESSION['user_id'])) {
             }
           </script>";
     exit();
-}
+} 
 // --- PHP Logic for Alerts ---
 if (isset($_GET['status_code'])) {
     $status_code = $_GET['status_code'];
