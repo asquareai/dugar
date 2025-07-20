@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Allow access to the maintenance page and assets folder
+RewriteCond %{REQUEST_URI} !/maintenance\.html$
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REMOTE_ADDR} !^123\.456\.789\.000$  # (optional) allow your IP
+
+# Redirect everything else to maintenance.html
+RewriteRule ^.*$ /maintenance.html [R=302,L]

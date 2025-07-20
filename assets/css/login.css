@@ -1,0 +1,78 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+
+
+}
+.logo {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.logo img
+{
+    width:200px!important;
+}
+
+/* Move logo to top-left for larger screens */
+@media (min-width: 768px) {
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        text-align: left;
+    }
+}
+
+/* Logo image styling */
+.logo img {
+    width: 150px; /* Adjust as needed */
+    display: block;
+}
+
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    
+
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    border: 2px solid #fff; /* Primary color border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary i {
+    font-size: 18px;
+    color: #fff; /* Icon color changed to orange */
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #1e3a61; /* Primary color on hover */
+    color: white;
+}
+
+.btn-primary:hover i {
+    transform: scale(1.1);
+}

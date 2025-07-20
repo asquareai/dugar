@@ -1,0 +1,72 @@
+    /* Reduce font size and padding for overall content */
+    body {
+        font-size: 12px; /* Slightly smaller text */
+    }
+
+    /* Ensure full-width table on larger screens */
+    .container {
+        max-width: 100%;
+        padding: 8px;
+    }
+    .custom-alert {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1050; /* Ensure it appears on top */
+        
+    }
+    
+    .small-alert {
+        font-size: 0.875rem; /* Smaller text */
+        padding: 5px 10px; /* Less padding */
+        width: auto; /* Adjust width dynamically */
+        display: inline-block;
+        padding:16px;
+        padding-left:50px;
+        padding-right: 50px;;
+    }
+    
+
+
+    
+/* Default Bootstrap Colors */
+.bg-secondary { background-color: #6c757d !important; color: white; } /* Gray */
+.bg-warning { background-color: #ffc107 !important; color: #212529; } /* Yellow */
+.bg-info { background-color: #17a2b8 !important; color: white; } /* Light Blue */
+.bg-primary { background-color: #007bff !important; color: white; } /* Blue */
+.bg-dark { background-color: #343a40 !important; color: white; } /* Dark Gray */
+.bg-success { background-color: #28a745 !important; color: white; } /* Green */
+.bg-danger { background-color: #dc3545 !important; color: white; } /* Red */
+.bg-light { background-color: #f8f9fa !important; color: #212529; border: 1px solid #ced4da; } /* Light Gray with border */
+
+/* Custom Elegant Colors */
+.bg-orange { background-color: #fd7e14 !important; color: white; } /* Orange */
+.bg-teal { background-color: #20c997 !important; color: white; } /* Teal */
+.bg-purple { background-color: #6f42c1 !important; color: white; } /* Purple */
+.bg-red { background-color: #d63384 !important; color: white; } /* Soft Red for 'Sent for Approval' */
+
+/* Badge Styling */
+.badge {
+    padding: 0.3em 0.75em;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 0.5rem; /* Rounded corners for modern look */
+    text-transform: capitalize;
+    display: inline-block;
+    min-width: 120px;
+    text-align: center;
+}
+.active-category {
+    background-color: #fff3cd; /* Light yellow for In Progress */
+    border: 2px solid #ffc107;
+    transition: all 0.3s ease-in-out;
+}
+
+.selected-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+.card {
+    margin-bottom: 1rem;
+}

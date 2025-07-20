@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #2D568F;
+}
+/* Apply Google Font */
+  body, h3, input, button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300; /* Thin font */
+}
+
+.form-control {
+    border-radius: 5px; /* Add smooth corners */
+    padding: 10px; /* Better spacing */
+    border:1px solid rgba(0,0,0,.5);
+}
+
+.input-group .form-control {
+    border-radius: 0px;
+}
+
+
+.input-group-text {
+    background: transparent;
+    border-right: none;
+}
+
+ .loader-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+    .loader {
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #007bff;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .alert-container {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        z-index: 1000;
+    }
+
+    /* Compact table rows */
+    .table th, .table td {
+        padding: 3px 6px; /* Further reduce padding */
+        font-size: 14px;  /* Decrease font size */
+        vertical-align: middle; /* Align text properly */
+    }
+
+    /* Reduce button height */
+    .btn-sm {
+        padding: 1px 6px; /* Adjust padding */
+        font-size: 12px;  /* Reduce font size */
+        line-height: 1;   /* Adjust line height */
+    }
+    /* Table border styling */
+    .table {
+        border: 1px solidrgb(77, 80, 84); /* Light gray border */
+    }
+
+    table td {
+        border: 1px solidrgb(106, 113, 120)!important; /* Slightly darker gray for cell borders */
+    }
+    .table th
+    {
+        border: 1px solidrgb(106, 113, 120)!important; /* Slightly darker gray for cell borders */
+        background: linear-gradient(to bottom,  #499bea 0%,#207ce5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        padding:5px!important;
+        color:#fff;
+
+
+    }
+    /* Add subtle shadow for better appearance */
+    .table-bordered {
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Alternate row styles */
+    .table tbody tr:nth-child(odd) td {
+        background-color: rgb(207, 230, 255) !important; /* Light gray */
+    }
+
+    .table tbody tr:nth-child(even) td {
+        background-color: #ffffff !important; /* White */
+    }
+
+    /* Further reduce row height and spacing on desktops */
+    @media (min-width: 1024px) {
+        .table th, .table td {
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+        
+        .btn-sm {
+            padding: 1px 5px;
+            font-size: 12px;
+        }
+    }
